@@ -29,6 +29,7 @@
 h3{
     margin-left: 100px;
     padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 button{
@@ -47,8 +48,39 @@ button{
 
 ul{
     padding:16px;
+     
     
 }
 li{
     list-style-type: none;
+    background-color:azure;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    
+    /* text-decoration: line-through; */
+}
+
+ul li:hover {
+    background-color:cadetblue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

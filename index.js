@@ -1,24 +1,24 @@
-// let array = [];
+let array = [];
 
-// function add() {
-   
-//   let val = document.getElementById("myText").value;
-//   array.push(val);
-//   console.log(array);
-//   document.getElementById("display").innerHTML = array;
-// }
 const myText = document.getElementById("myText")
 const myList = document.getElementById("myList")
 // function for my add button
 function add() {
     if(myText.value=== ''){
         alert("Write something");
+
     }
+  
     else{
         let li = document.createElement("li");
         li.innerHTML = myText.value;
         myList.appendChild(li);
     }
+    li.innerHTML = `
+        <input type="checkbox" class="checkbox" ${checked}>
+        ${list.name}
+        <button class="delete-button"></button>`;
+        myList.appendChild(li);
     myText.value = "";
     saveData();
 
@@ -26,22 +26,9 @@ function add() {
     console.log('date', myDate.toLocaleDateString()); 
     //Obtain only the time
      console.log("time: ", myDate.toLocaleTimeString());
+
+     array.push(myText.value)
 }
-
-
-// myList.addEventListener("click",function(e){
-//     if(e.target.tagName === "List") {
-//          e.target.classList. toggle("checked");
-//          saveData()
-//     }
-//     else if(e.target.tagName ==="SPAN"){
-//         e.target.parentElement.remove();
-//         saveData()
-//     }
-
-// } , false);
-
-
 function saveData() {
     localStorage.setItem("Data",myList.innerHTML );
 }
@@ -50,7 +37,6 @@ function showList(){
 
 }
 showList(); 
-
 
 function sorting() {
     var list, i, switching, b, shouldSwitch;
